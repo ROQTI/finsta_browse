@@ -28,6 +28,8 @@ class WelcomeController < ApplicationController
 
   end
 
-
+  def list_all_directors
+    @directors = Director.all
+  end
 
 end

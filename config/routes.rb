@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'welcome/list_unread_reports' => 'welcome#list_unread_reports'
   get 'welcome/view_report' => 'welcome#view_report'
   get 'welcome/mark_as_read' => 'welcome#mark_as_read'
+  get 'welcome/list_all_directors'=> 'welcome#list_all_directors'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
