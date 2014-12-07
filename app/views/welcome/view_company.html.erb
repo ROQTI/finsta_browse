@@ -2,16 +2,30 @@ Viewing company: <%= @company.company_name %>
 
 <br>
 
-Company Symbol: <%= @company.stock_symbol %>
+Company Symbol: <%= @company.ticker_symbol %>
 
 <br>
 
-Closing Price: <%= @company.closing_prices.first().closing_price %>
+Closing Price: <%#= @company.closing_prices.first().closing_price %>
 
 <br>
 
-Current CEO: <%= @company.current_ceo %>
+Current CEO: <%#= @company.current_ceo %>
 
 <br>
 
-Newest Info:    <%= link_to "text", :action => "view_company_information",:id => @company.id %>
+Newest Info:    <%#= link_to "text", :action => "view_company_information",:id => @company.id %>
+
+<br>
+
+Year Founded:  <%= @company.year_founded %>
+
+<br>
+<br>
+<br>
+<br>
+
+<%= form_tag :action => "update_company", :id => @company.id do %>
+<%= text_field_tag "year_founded" %>
+<%= submit_tag %>
+<% end %>

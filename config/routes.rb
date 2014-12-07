@@ -12,6 +12,12 @@ Rails.application.routes.draw do
   get 'welcome/view_report' => 'welcome#view_report'
   get 'welcome/mark_as_read' => 'welcome#mark_as_read'
   get 'welcome/list_all_directors'=> 'welcome#list_all_directors'
+  get 'welcome/update_company' => 'welcome#update_company'
+  post 'welcome/update_company' => 'welcome#update_company'
+  get 'welcome/view_market' => 'welcome#view_market'
+  post 'welcome/update_market' => 'welcome#update_market'
+  get "welcome/create_new_company" => 'welcome#create_new_company'
+  post 'welcome/create_new_company' => 'welcome#create_new_company'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

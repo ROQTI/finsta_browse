@@ -1,0 +1,7 @@
+<%= form_tag :action => "create_new_company" do %>
+Company Name:  <%= text_field_tag "company_name" %> <br>
+Ticker Symbol: <%= text_field_tag "ticker_symbol" %> <br>
+Year Founded:  <%= text_field_tag "year_founded" %> <br>
+
+<%= submit_tag %>
+<% end %>

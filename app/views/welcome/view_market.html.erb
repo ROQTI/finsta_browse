@@ -1,0 +1,23 @@
+Viewing Exchange: <%= @market.exchange %>
+
+<br>
+
+Company Name: <%= @market.comp_name %>
+
+<br>
+
+Trading Date:  <%= @market.trading_date %>
+
+<br>
+
+Closing Price: <%= @market.end_price %>
+
+<br>
+<br>
+<br>
+<br>
+
+<%= form_tag :action => "update_market", :id => @market.id do %>
+<%= text_field_tag "end_price" %>
+<%= submit_tag %>
+<% end %>

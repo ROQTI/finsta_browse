@@ -1,7 +1,22 @@
-Hello world!
+Companies:
 
 <br>
 
 <% for company in @companies %>
-    <%= link_to company.company_name, :action => "view_company", :id => company.id %><br>
+<%= link_to company.company_name, :action => "view_company", :id => company.id %>
+<br>
 <% end %>
+
+<br>
+<br>
+
+Markets: 
+<br>
+<% for market in @markets %>
+<%= link_to market.exchange, :action => "view_market", :id => market.id %>
+<% end %>
+
+<br>
+<br>
+
+<%= link_to "Create New Company", :action => "create_new_company" %>
